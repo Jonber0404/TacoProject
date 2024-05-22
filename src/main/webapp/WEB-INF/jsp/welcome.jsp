@@ -7,5 +7,5 @@
 
 </head>
 <body>
-
+    <img src="/taco.JPG" alt="Taco Image">
 </body>
