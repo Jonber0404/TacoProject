@@ -2,8 +2,8 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <html>
 <body>
-    <h1>New Vehicle Registration</h1>
-        
+    <h1>New Taco Registration</h1>
+
     <form:form modelAttribute="form">
         <form:errors path="" element="div" />
         <div>

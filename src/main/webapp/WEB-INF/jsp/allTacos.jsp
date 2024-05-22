@@ -3,14 +3,14 @@
 
 <html>
 <head>
-   <title>Vehicles page</title>
+   <title>Tacos page</title>
 </head>
 <body>
-<h1>Vehicles page</h1>
+<h1>Tacos page</h1>
 
 <ul>
-   <c:forEach items="${vehicles}" var="vehicle">
-      <li>${vehicle}</li>
+   <c:forEach items="${tacos}" var="taco">
+      <li>${taco}</li>
    </c:forEach>
 </ul>
 </body>
