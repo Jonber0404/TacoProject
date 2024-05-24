@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 
 @Entity
 public class Taco {
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
     private long id;
     private String name;
@@ -20,22 +20,25 @@ public class Taco {
     private int size;
     private float weight;
 
-
-
-    public Taco() {}
+    public Taco() {
+    }
 
     public String toString() {
         return this.name + " " + this.id;
     }
+
     public long getId() {
         return id;
     }
+
     public void setId(long id) {
         this.id = id;
     }
+
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
