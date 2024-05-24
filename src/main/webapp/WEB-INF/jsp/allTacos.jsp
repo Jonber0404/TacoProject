@@ -12,6 +12,7 @@
    <c:forEach items="${tacos}" var="taco">
       <li>${taco}</li>
    </c:forEach>
+   <a href="/home.html"><button id="exit">Exit to main menu</button></a>
 </ul>
 </body>
 </html>
