@@ -21,7 +21,7 @@ public class TacoprojectApplication {
         return args -> {
             if (tacoRepo.count() == 0) {
                 Taco taco1 = new Taco();
-                taco1.setName("Fish Taco");
+                taco1.setName("FishTaco");
                 taco1.setMeat(0);
                 taco1.setChicken(0);
                 taco1.setFish(100);
@@ -36,7 +36,7 @@ public class TacoprojectApplication {
                 tacoRepo.save(taco1);
 
                 Taco taco2 = new Taco();
-                taco2.setName("Meat Taco");
+                taco2.setName("MeatTaco");
                 taco2.setMeat(100);
                 taco2.setChicken(0);
                 taco2.setFish(0);
@@ -51,7 +51,7 @@ public class TacoprojectApplication {
                 tacoRepo.save(taco2);
 
                 Taco taco3 = new Taco();
-                taco3.setName("Bean Taco");
+                taco3.setName("BeanTaco");
                 taco3.setMeat(0);
                 taco3.setChicken(0);
                 taco3.setFish(0);
@@ -66,7 +66,7 @@ public class TacoprojectApplication {
                 tacoRepo.save(taco3);
 
                 Taco taco4 = new Taco();
-                taco4.setName("Mixed Taco");
+                taco4.setName("MixedTaco");
                 taco4.setMeat(25);
                 taco4.setChicken(25);
                 taco4.setFish(25);

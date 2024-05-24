@@ -7,18 +7,18 @@
     <title>Home</title>
 </head>
 <body>
-    <h1>Här är 4 stycken tacos</h1>
+    <h1>Here are 4 basic tacos</h1>
 
     <br>
-    <a href="/taco.html?taco=Taco1"><button id="taco1">Taco1</button></a>
+    <a href="/taco.html?taco=FishTaco"><button id="taco1">Fish Taco</button></a>
     <br>
     <br>
-    <a href="/taco.html?taco=Taco2"><button id="taco2">Taco2</button></a>
+    <a href="/taco.html?taco=MeatTaco"><button id="taco2">Meat Taco</button></a>
     <br>
     <br>
-    <a href="/taco.html?taco=Taco3"><button id="taco3">Taco3</button></a>
+    <a href="/taco.html?taco=BeanTaco"><button id="taco3">Bean Taco</button></a>
     <br>
     <br>
-    <a href="/taco.html?taco=Taco4"><button id="taco4">Taco4</button></a>
+    <a href="/taco.html?taco=MixedTaco"><button id="taco4">Mixed Taco</button></a>
 </body>
 </html>
