@@ -1,9 +1,6 @@
 package se.yrgo.domain;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 public class Taco {
@@ -11,6 +8,18 @@ public class Taco {
     @Id
     private long id;
     private String name;
+    private float meat;
+    private float chicken;
+    private float fish;
+    private float beans;
+    private float cheese;
+    private float cucumber;
+    private float sauce;
+    private float corn;
+    private Tortilla tortillaSize;
+    private int size;
+    private float weight;
+
 
 
     public Taco() {}
@@ -31,4 +40,95 @@ public class Taco {
         this.name = name;
     }
 
+    public float getMeat() {
+        return meat;
+    }
+
+    public void setMeat(float meat) {
+        this.meat = meat;
+    }
+
+    public float getChicken() {
+        return chicken;
+    }
+
+    public void setChicken(float chicken) {
+        this.chicken = chicken;
+    }
+
+    public float getFish() {
+        return fish;
+    }
+
+    public void setFish(float fish) {
+        this.fish = fish;
+    }
+
+    public float getBeans() {
+        return beans;
+    }
+
+    public void setBeans(float beans) {
+        this.beans = beans;
+    }
+
+    public float getCheese() {
+        return cheese;
+    }
+
+    public void setCheese(float cheese) {
+        this.cheese = cheese;
+    }
+
+    public float getCucumber() {
+        return cucumber;
+    }
+
+    public void setCucumber(float cucumber) {
+        this.cucumber = cucumber;
+    }
+
+    public float getSauce() {
+        return sauce;
+    }
+
+    public void setSauce(float sauce) {
+        this.sauce = sauce;
+    }
+
+    public float getCorn() {
+        return corn;
+    }
+
+    public void setCorn(float corn) {
+        this.corn = corn;
+    }
+
+    public Tortilla getTortillaSize() {
+        return tortillaSize;
+    }
+
+    public void setTortillaSize(Tortilla tortillaSize) {
+        this.tortillaSize = tortillaSize;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
+    }
+
+    public float getWeight() {
+        return weight;
+    }
+
+    public void setWeight(float weight) {
+        this.weight = weight;
+    }
+
+    public void calculateWeight() {
+        this.weight = (meat + fish + chicken + beans + cheese + cucumber + sauce + corn) * (size / 100);
+    }
 }
