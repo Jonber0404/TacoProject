@@ -20,7 +20,7 @@
     <p>Weight: ${taco.weight}g</p>
     <a href="/home.html">Back to Home</a>
 
-    <button id="edit">Edit</button></a>
+    <a href="editTaco.html"><button id="edit">Edit</button></a>
     <form action="eatTaco" method="post">
         <input type="hidden" name="id" value="${taco.id}" />
         <button type="submit">Eat</button>
