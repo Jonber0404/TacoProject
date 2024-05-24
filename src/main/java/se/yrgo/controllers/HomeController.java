@@ -28,4 +28,10 @@ public class HomeController {
         return new ModelAndView("taco", "taco", taco);
     }
 
+    @RequestMapping("/editTaco.html")
+    public ModelAndView editTacoPage() {
+        Date dateAndTime = new Date();
+        return new ModelAndView("editTaco");
+    }
+
 }
