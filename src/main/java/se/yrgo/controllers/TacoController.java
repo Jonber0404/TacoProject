@@ -18,7 +18,9 @@ public class TacoController {
     private TacoRepository data;
 
     @RequestMapping(value = "/newTaco.html", method = RequestMethod.POST)
-    public String newTaco(Taco taco) {
+    public String createNewTaco(Taco taco) {
+        taco.setSize(100);
+        taco.calculateWeight();
         data.save(taco);
         return "redirect:/website/tacos/list.html";
     }
@@ -26,7 +28,7 @@ public class TacoController {
     @RequestMapping(value = "/newTaco.html", method = RequestMethod.GET)
     public ModelAndView renderNewTacoForm() {
         Taco newTaco = new Taco();
-        return new ModelAndView("newTaco", "form", newTaco);
+        return new ModelAndView("createTaco", "taco", newTaco);
     }
 
     @RequestMapping(value = "/list.html", method = RequestMethod.GET)

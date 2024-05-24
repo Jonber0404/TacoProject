@@ -38,6 +38,9 @@
     <a href="/website/tacos/list.html"><button id="viewAllTacos">View All Tacos</button></a>
     <br>
     <br>
+    <a href="/website/tacos/newTaco.html"><button id="createNewTaco">Bake new taco</button></a>
+    <br>
+    <br>
     <form action="/taco.html" method="get">
             <label for="search">Search for a Taco:</label>
             <input type="text" id="search" name="taco" placeholder="Enter taco name" required>
