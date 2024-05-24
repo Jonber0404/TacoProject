@@ -21,7 +21,13 @@
     <a href="/home.html">Back to Home</a>
 
     <button id="edit">Edit</button></a>
-    <button id="eat">Eat</button></a>
+    <form action="eatTaco" method="post">
+        <input type="hidden" name="id" value="${taco.id}" />
+        <button type="submit">Eat</button>
+    </form>
+    <c:if test="${not empty message}">
+        <p style="color: red;">${message}</p>
+    </c:if>
     <a href="/home.html"><button id="exit">Exit</button></a>
     <br>
     <a href="/tacos/${taco.name}"><button>GET</button></a>
