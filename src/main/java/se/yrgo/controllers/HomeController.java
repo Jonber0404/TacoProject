@@ -28,4 +28,16 @@ public class HomeController {
         return new ModelAndView("taco", "taco", taco);
     }
 
+    @RequestMapping("/eatTaco")
+    public ModelAndView eatTaco(@RequestParam Long id) {
+        Taco taco = tacoRepo.findById(id).orElseThrow(() -> new IllegalArgumentException("Invalid taco Id:" + id));
+        boolean isFinished = taco.eat(20);
+        tacoRepo.save(taco);
+
+        ModelAndView modelAndView = new ModelAndView("taco", "taco", taco);
+        if (isFinished) {
+            modelAndView.addObject("message", "Here's another one!");
+        }
+        return modelAndView;
+    }
 }

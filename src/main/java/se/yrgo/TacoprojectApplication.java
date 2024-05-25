@@ -49,7 +49,7 @@ public class TacoprojectApplication {
                 taco2.setTortillaSize(Tortilla.LARGE);
                 taco2.setSize(100);
                 taco2.calculateWeight();
-                taco1.setPercentageLeft(100);
+                taco2.setPercentageLeft(100);
                 tacoRepo.save(taco2);
 
                 Taco taco3 = new Taco();

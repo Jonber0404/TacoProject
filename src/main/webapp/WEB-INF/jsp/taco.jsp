@@ -18,6 +18,7 @@
     <p>Tortilla Size: ${taco.tortillaSize}</p>
     <p>Size: ${taco.size}%</p>
     <p>Weight: ${taco.weight}g</p>
+    <p>How much is left: ${taco.percentageLeft}</p>
     <a href="/home.html">Back to Home</a>
 
     <button id="edit">Edit</button></a>

@@ -22,8 +22,7 @@ public class Taco {
     @Column(name = "percentage_left")
     private int percentageLeft = 100;
 
-    public Taco() {
-    }
+    public Taco() {}
 
     public String toString() {
         return this.name + " " + this.id;
