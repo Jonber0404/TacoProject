@@ -32,4 +32,13 @@ public class TacoRestController {
         return data.findByName(name);
     }
 
+
+    @PostMapping("/tacos/eat")
+    public ResponseEntity<Taco> eatTaco(@RequestParam Long id, @RequestParam int percent) {
+        Taco taco = data.findById(id).orElseThrow(() -> new IllegalArgumentException("Invalid taco Id:" + id));
+        taco.eat(percent);
+        data.save(taco);
+        return new ResponseEntity<>(taco, HttpStatus.OK);
+    }
+
 }

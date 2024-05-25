@@ -19,6 +19,8 @@ public class Taco {
     private Tortilla tortillaSize;
     private int size;
     private float weight;
+    @Column(name = "percentage_left")
+    private int percentageLeft = 100;
 
     public Taco() {
     }
@@ -133,5 +135,30 @@ public class Taco {
 
     public void calculateWeight() {
         this.weight = (meat + fish + chicken + beans + cheese + cucumber + sauce + corn) * (size / 100);
+    }
+
+    public int getPercentageLeft() {
+        return percentageLeft;
+    }
+
+    public void setPercentageLeft(int percentageLeft) {
+        this.percentageLeft = percentageLeft;
+    }
+
+    @PrePersist
+    @PreUpdate
+    private void ensurePercentageLeft() {
+        if (this.percentageLeft == 0) {
+            this.percentageLeft = 100;
+        }
+    }
+
+    public boolean eat(int percent) {
+        if (percentageLeft >= percent) {
+            percentageLeft -= percent;
+        } else {
+            percentageLeft = 0;
+        }
+        return percentageLeft == 0;
     }
 }

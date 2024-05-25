@@ -19,8 +19,9 @@ public class TacoController {
 
     @RequestMapping(value = "/newTaco.html", method = RequestMethod.POST)
     public String createNewTaco(Taco taco) {
-        taco.setSize(100);
+        //taco.setSize(100);
         taco.calculateWeight();
+        taco.setPercentageLeft(100);
         data.save(taco);
         return "redirect:/website/tacos/list.html";
     }

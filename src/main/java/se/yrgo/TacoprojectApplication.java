@@ -33,6 +33,7 @@ public class TacoprojectApplication {
                 taco1.setTortillaSize(Tortilla.LARGE);
                 taco1.setSize(100);
                 taco1.calculateWeight();
+                taco1.setPercentageLeft(100);
                 tacoRepo.save(taco1);
 
                 Taco taco2 = new Taco();
@@ -48,6 +49,7 @@ public class TacoprojectApplication {
                 taco2.setTortillaSize(Tortilla.LARGE);
                 taco2.setSize(100);
                 taco2.calculateWeight();
+                taco1.setPercentageLeft(100);
                 tacoRepo.save(taco2);
 
                 Taco taco3 = new Taco();
@@ -63,6 +65,7 @@ public class TacoprojectApplication {
                 taco3.setTortillaSize(Tortilla.MEDIUM);
                 taco3.setSize(100);
                 taco3.calculateWeight();
+                taco3.setPercentageLeft(100);
                 tacoRepo.save(taco3);
 
                 Taco taco4 = new Taco();
@@ -78,6 +81,7 @@ public class TacoprojectApplication {
                 taco4.setTortillaSize(Tortilla.LARGE);
                 taco4.setSize(100);
                 taco4.calculateWeight();
+                taco4.setPercentageLeft(100);
                 tacoRepo.save(taco4);
             };
         };
