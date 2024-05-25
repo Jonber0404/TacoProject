@@ -36,7 +36,7 @@ public class HomeController {
 
         ModelAndView modelAndView = new ModelAndView("taco", "taco", taco);
         if (isFinished) {
-            modelAndView.addObject("message", "Here's another one!");
+            modelAndView.addObject("message", "Did it taste good? Well, here's another one!");
         }
         return modelAndView;
     }

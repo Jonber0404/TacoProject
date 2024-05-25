@@ -16,9 +16,9 @@
     <p>Sauce: ${taco.sauce}g</p>
     <p>Corn: ${taco.corn}g</p>
     <p>Tortilla Size: ${taco.tortillaSize}</p>
-    <p>Size: ${taco.size}%</p>
+    <!-- <p>Size: ${taco.size}%</p> -->
     <p>Weight: ${taco.weight}g</p>
-    <p>How much is left: ${taco.percentageLeft}</p>
+    <p>How much is left: ${taco.percentageLeft}%</p>
     <a href="/home.html">Back to Home</a>
 
     <button id="edit">Edit</button></a>
