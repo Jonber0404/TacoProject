@@ -1,10 +1,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Create New Taco</title>
+    <title>Edit Taco</title>
 </head>
 <body>
-<h1>Create New Taco</h1>
+<h1>Edit Taco</h1>
 <form action="/website/tacos/editTaco.html" method="POST">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required><br>

@@ -28,6 +28,12 @@ public class HomeController {
         return new ModelAndView("taco", "taco", taco);
     }
 
+    @RequestMapping("/editTaco.html")
+    public ModelAndView editTacoPage() {
+        Date dateAndTime = new Date();
+        return new ModelAndView("editTaco");
+    }
+
     @RequestMapping("/eatTaco")
     public ModelAndView eatTaco(@RequestParam Long id) {
         Taco taco = tacoRepo.findById(id).orElseThrow(() -> new IllegalArgumentException("Invalid taco Id:" + id));
